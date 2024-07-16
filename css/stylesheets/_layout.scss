@@ -1,0 +1,63 @@
+//==============================================================================
+// _layout
+// css/stylesheets/_layout.scss
+//
+// 7/15/24
+//==============================================================================
+
+%container {
+	width : 92%;
+	margin-left : auto;
+	margin-right : auto;
+	max-width : 80ch;
+}
+
+html {
+	height : 100%;
+	min-height : 100vh;
+	margin : 0;
+	padding : 0;
+	width : 100vw;
+}
+
+body {
+	min-height : 100vh;
+	display : flex;
+	flex-direction : column;
+	justify-content : space-between;
+	gap: 0;
+}
+
+main {
+	margin : 0;
+	width : 100%;
+	flex-grow : 1;
+}
+
+main > section:not(.header), .header > hgroup {
+	@extend %container;
+	padding : 1em 0;
+}
+
+section:not(:last-of-type) {
+	margin-bottom : 1.5em;
+}
+
+body > header:first-of-type {
+
+}
+
+body > footer:last-of-type {
+	width : 100%;
+	padding : 2em 0;
+	margin : 0;
+	text-align : center;
+	p {
+		text-align : center;
+		font-size : small;
+		font-weight : 500;
+		line-height : 1;
+		color: gray;
+		vertical-align : middle;
+	}
+}

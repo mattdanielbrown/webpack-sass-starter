@@ -1,0 +1,106 @@
+//==============================================================================
+// _components
+// css/stylesheets/_components.scss
+//
+// 7/15/24
+//==============================================================================
+
+//------------------------------------------------------------------------------
+// Links
+//------------------------------------------------------------------------------
+
+a,a:link,a:any-link,a:visited {
+	text-decoration : none;
+	font-family : inherit;
+	font-weight : 500;
+	display : inline-block;
+	vertical-align : middle;
+	line-height : inherit;
+	transition : all 200ms;
+	cursor : pointer;
+	user-select : none;
+}
+
+//------------------------------------------------------------------------------
+// Button elements
+//------------------------------------------------------------------------------
+%button {
+	appearance: none;
+	font-family : inherit;
+	font-size : 1em;
+	line-height : 1;
+	font-weight : 600;
+	transition : all 200ms;
+	transform: translate3d(0,0,0);
+	border-radius : .375em;
+	border : 1px solid transparent;
+	user-select : none;
+	cursor : pointer;
+	padding : 0.5em .75em;
+}
+button,.button,[role="button"],[type="button"],[type="reset"],[type="submit"] {
+	@extend %button;
+}
+.buttons {
+	@extend %list-reset;
+}
+
+//------------------------------------------------------------------------------
+// Form elements
+//------------------------------------------------------------------------------
+form {
+	display : block;
+	width : 100%;
+	margin : 0 auto;
+	padding : 0;
+}
+fieldset {
+	display : block;
+	width : 100%;
+	margin : 0;
+	padding : 0;
+}
+legend {
+	display : block;
+	width : 100%;
+	margin : 0;
+	padding : 0;
+	font-size : x-large;
+	font-weight : 600;
+}
+label {
+
+}
+
+%text-inputs {
+	font-family : inherit;
+	font-size : 1em;
+	line-height : 1;
+	font-weight : normal;
+	display : block;
+	width : 100%;
+	transition : all 200ms;
+	border-radius : .375em;
+	border : 1px solid lightgray;
+	user-select : none;
+	padding : 0.5em .75em;
+}
+[type="color"],[type="date"],[type="datetime"],[type="search"],
+[type="datetime-local"],[type="tel"],[type="email"],[type="month"],
+[type="number"],[type="password"],[type="text"],[type="time"],[type="url"],
+[type="week"],input:not([type]),textarea {
+	@extend %text-inputs;
+}
+textarea {
+	line-height : 1.5;
+}
+
+[type="checkbox"], [type="radio"] {
+
+}
+[type="checkbox"] {
+
+}
+[type="radio"] {
+
+}

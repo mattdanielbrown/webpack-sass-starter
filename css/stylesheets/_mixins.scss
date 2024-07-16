@@ -1,0 +1,17 @@
+//==============================================================================
+// _mixins
+// css/stylesheets/_mixins.scss
+//
+// 7/15/24
+//==============================================================================
+
+/**
+ * @mixin minimum-width($size)
+ * Min-width @media query shorthand.
+ * @param $size - The minimum width to start the media query at (requires units)
+ */
+@mixin minimum-width($size: 48em) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}

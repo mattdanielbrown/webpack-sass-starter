@@ -1,0 +1,34 @@
+{
+  "name": "webpack-sass-starter",
+  "version": "0.0.1",
+  "description": "Starter project (template) using Webpack configured with Sass/SCSS, Autoprefixer, and Yarn.",
+  "private": true,
+  "keywords": [
+    "webpack",
+    "starter",
+    "template",
+    "Sass",
+    "SCSS"
+  ],
+  "license": "MIT",
+  "author": "Matt Daniel Brown",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "latest",
+    "html-webpack-plugin": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest",
+    "webpack-merge": "latest",
+    "css-loader": "latest",
+    "postcss": "latest",
+    "postcss-loader": "latest",
+    "sass": "latest",
+    "sass-loader": "latest",
+    "style-loader": "latest"
+  }
+}
