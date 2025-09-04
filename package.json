@@ -27,7 +27,7 @@
     "css-loader": "latest",
     "postcss": "latest",
     "postcss-loader": "latest",
-    "sass": "latest",
+    "sass": "1.90.0",
     "sass-loader": "latest",
     "style-loader": "latest"
   }
