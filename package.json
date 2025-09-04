@@ -28,7 +28,7 @@
     "postcss": "latest",
     "postcss-loader": "latest",
     "sass": "latest",
-    "sass-loader": "latest",
+    "sass-loader": "16.0.5",
     "style-loader": "latest"
   }
 }
