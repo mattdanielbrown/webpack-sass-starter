@@ -26,7 +26,7 @@
     "webpack-merge": "latest",
     "css-loader": "latest",
     "postcss": "latest",
-    "postcss-loader": "latest",
+    "postcss-loader": "8.2.0",
     "sass": "latest",
     "sass-loader": "latest",
     "style-loader": "latest"
