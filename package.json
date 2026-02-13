@@ -20,7 +20,7 @@
   "devDependencies": {
     "copy-webpack-plugin": "latest",
     "html-webpack-plugin": "latest",
-    "webpack": "latest",
+    "webpack": "5.104.1",
     "webpack-cli": "latest",
     "webpack-dev-server": "latest",
     "webpack-merge": "latest",
